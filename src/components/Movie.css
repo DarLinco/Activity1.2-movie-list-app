@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+
+.cardlist_movies {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    -webkit-box-shadow: 5px 5px 32px 5px rgba(0,0,0,0.43); 
+    box-shadow: 5px 5px 32px 5px rgba(0,0,0,0.43);
+}
+
+.card {
+
+    margin-left: 20px;
+    border-radius: 4px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.movie_image {
+    height: 300px;
+    width: 200px;
+    border-radius: 10px;
+    transition: transform 0.2s;
+  
+}
+
+.card:hover{
+    cursor: pointer;
+	transform: scale(1.1);
+}
+.card:hover .overlay {
+	opacity: 1;
+    color: aliceblue;
+}
+
+.overlay {
+	position: fixed;
+	background: rgba(0, 0, 0, 0.8);
+
+	transition: 0.5s ease;
+	opacity: 0;
+	bottom: 0;
+	font-size: 20px;
+	padding: 20px;
+
+	
+}
+.flex_card {
+    background-color: rgb(14, 13, 13);
+    color: #f2f1ee ;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.heading {
+    font-weight: bolder;
+    padding: 5px;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+.paragraph {
+    padding: 5px;
+    color: #3da4ab ;
+}
